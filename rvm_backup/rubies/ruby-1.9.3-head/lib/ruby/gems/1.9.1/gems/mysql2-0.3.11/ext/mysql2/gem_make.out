@@ -1,0 +1,41 @@
+/Users/stern_schnuppe_g/.rvm/rubies/ruby-1.9.3-head/bin/ruby extconf.rb
+checking for rb_thread_blocking_region()... yes
+checking for rb_wait_for_single_fd()... yes
+checking for mysql.h... yes
+checking for errmsg.h... yes
+checking for mysqld_error.h... yes
+creating Makefile
+
+make
+compiling client.c
+In file included from client.c:1:
+In file included from ./mysql2_ext.h:8:
+In file included from /Users/stern_schnuppe_g/.rvm/rubies/ruby-1.9.3-head/include/ruby-1.9.1/ruby.h:32:
+/Users/stern_schnuppe_g/.rvm/rubies/ruby-1.9.3-head/include/ruby-1.9.1/ruby/ruby.h:105:37: error: 'ruby_check_sizeof_long' declared as an array with a negative size
+typedef char ruby_check_sizeof_long[SIZEOF_LONG == sizeof(long) ? 1 : -1];
+                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/stern_schnuppe_g/.rvm/rubies/ruby-1.9.3-head/include/ruby-1.9.1/x86_64-darwin11.3.0/ruby/config.h:22:21: note: expanded from macro 'SIZEOF_LONG'
+#define SIZEOF_LONG 8
+                    ^
+In file included from client.c:1:
+In file included from ./mysql2_ext.h:8:
+In file included from /Users/stern_schnuppe_g/.rvm/rubies/ruby-1.9.3-head/include/ruby-1.9.1/ruby.h:32:
+/Users/stern_schnuppe_g/.rvm/rubies/ruby-1.9.3-head/include/ruby-1.9.1/ruby/ruby.h:109:38: error: 'ruby_check_sizeof_voidp' declared as an array with a negative size
+typedef char ruby_check_sizeof_voidp[SIZEOF_VOIDP == sizeof(void*) ? 1 : -1];
+                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/stern_schnuppe_g/.rvm/rubies/ruby-1.9.3-head/include/ruby-1.9.1/x86_64-darwin11.3.0/ruby/config.h:26:22: note: expanded from macro 'SIZEOF_VOIDP'
+#define SIZEOF_VOIDP 8
+                     ^
+In file included from client.c:1:
+In file included from ./mysql2_ext.h:8:
+In file included from /Users/stern_schnuppe_g/.rvm/rubies/ruby-1.9.3-head/include/ruby-1.9.1/ruby.h:32:
+In file included from /Users/stern_schnuppe_g/.rvm/rubies/ruby-1.9.3-head/include/ruby-1.9.1/ruby/ruby.h:1382:
+In file included from /Users/stern_schnuppe_g/.rvm/rubies/ruby-1.9.3-head/include/ruby-1.9.1/ruby/intern.h:34:
+/Users/stern_schnuppe_g/.rvm/rubies/ruby-1.9.3-head/include/ruby-1.9.1/ruby/st.h:67:45: error: 'st_check_for_sizeof_st_index_t' declared as an array with a negative size
+typedef char st_check_for_sizeof_st_index_t[SIZEOF_VOIDP == (int)sizeof(st_index_t) ? 1 : -1];
+                                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/stern_schnuppe_g/.rvm/rubies/ruby-1.9.3-head/include/ruby-1.9.1/x86_64-darwin11.3.0/ruby/config.h:26:22: note: expanded from macro 'SIZEOF_VOIDP'
+#define SIZEOF_VOIDP 8
+                     ^
+3 errors generated.
+make: *** [client.o] Error 1
