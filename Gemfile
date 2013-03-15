@@ -1,14 +1,19 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.12'
+# CSSフレームワーク
 gem 'bootstrap-sass', '2.1'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
+# postgresql
 gem 'pg', '0.12.2'
+
 group :development, :test do
   gem 'rspec-rails', '2.11.0'
+  # テストを自動化
   gem 'guard-rspec', '1.2.1'
+  # テストを高速化
   gem 'spork', '0.9.2'
   gem 'guard-spork', '1.4.2'
 end
@@ -27,9 +32,17 @@ end
 
 gem 'jquery-rails', '2.0.2'
 
+group :development do
+  # モデルに注釈をつけるGem
+  gem 'annotate', '2.5.0'
+end
+
 group :test do
+  # ウェプアプリケーションでの利用者の振る舞いを真似ることが可能に
   gem 'capybara', '1.1.2'
+  # Guardを利用するための前提gem
   gem 'rb-fsevent', '0.9.1', :require => false
+  # Mac OS Xに通知するgem
   gem 'growl', '1.0.3'
 end
 
