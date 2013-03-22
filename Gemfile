@@ -47,6 +47,8 @@ group :test do
   gem 'rb-fsevent', '0.9.1', :require => false
   # Mac OS Xに通知するgem
   gem 'growl', '1.0.3'
+  # Fixturesを利用することなくテストのためのモデルオブジェクトを生成するgem
+  gem 'factory_girl_rails', '4.1.0'
 end
 
 # To use ActiveModel has_secure_password
