@@ -49,6 +49,10 @@ group :test do
   gem 'growl', '1.0.3'
   # Fixturesを利用することなくテストのためのモデルオブジェクトを生成するgem
   gem 'factory_girl_rails', '4.1.0'
+  # 受け入れテストのためのテスティングフレームワーク
+  gem 'cucumber-rails', '1.2.1', :require => false
+  # テスト終了時にデータベースをきれいにする
+  gem 'database_cleaner', '0.7.0'
 end
 
 # To use ActiveModel has_secure_password
