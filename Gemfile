@@ -5,6 +5,11 @@ gem 'rails', '3.2.12'
 gem 'bootstrap-sass', '2.1'
 # パスワードを暗号化する
 gem 'bcrypt-ruby', '3.0.1'
+# ダミーデータを作成する
+gem 'faker', '1.0.1'
+# ページ分割を簡単に実現する
+gem 'will_paginate', '3.0.3'
+gem 'bootstrap-will_paginate', '0.0.6'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
